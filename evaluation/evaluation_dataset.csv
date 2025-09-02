@@ -1,0 +1,11 @@
+Query,Expected_Tool,Expected_Outcome
+"What is Scope 2?",TOOL_PROTOCOL_QA,"The response should accurately define Scope 2 emissions as indirect emissions from the generation of purchased electricity, steam, heating, or cooling, citing the GHG Protocol."
+"Is my classification of 'Electricity' under Scope 2 valid?",TOOL_VALIDATION,"The response should confirm that classifying purchased electricity under Scope 2 is correct according to the GHG Protocol."
+"How does my Scope 1 emission compare with Peer 1?",TOOL_COMPARISON,"The response must state the correct total Scope 1 emissions for our company and for Peer 1, followed by a brief comparative insight."
+"Calculate the total CO2e from Diesel in Scope 1",TOOL_SQL_QUERY,"The response must correctly calculate the sum of CO2e_Tonnes from the scope1.csv file where Fuel_Type is 'Diesel'. The final number should be accurate."
+"Generate a summary report of our total emissions for Scope 1 and Scope 3",TOOL_SUMMARY_REPORT,"The report must contain the correct total emissions for Scope 1 and Scope 3, a breakdown of top contributors for each, and qualitative insights."
+"Should employee business travel be classified as Scope 1 or Scope 3? Explain and show me how to calculate it.","TOOL_PROTOCOL_QA, TOOL_SQL_QUERY","The response must first correctly explain that business travel is Scope 3, citing the protocol. It must then provide the calculated total for business travel emissions from the company's data."
+"What is the weather like today?",TOOL_FALLBACK,"The agent should state that it cannot answer questions about the weather and that its expertise is in GHG emissions analysis."
+"Shw me the brakdown of scope 3 by activity",TOOL_SQL_QUERY,"This tests robustness. The agent should correctly interpret the misspelled query and generate a SQL query to group Scope 3 emissions by Activity_Description."
+"What is the total emission from the Manufacturing Plant and the SF HQ in scope 1?",TOOL_SQL_QUERY,"The response must show the correct sum of CO2e_Tonnes from scope1.csv for the specified facilities."
+"Compare my business travel emissions with peers",TOOL_COMPARISON,"The response must correctly calculate the company's total 'Business Travel' emissions from scope3.csv and compare it against the relevant columns in the peer data files."
